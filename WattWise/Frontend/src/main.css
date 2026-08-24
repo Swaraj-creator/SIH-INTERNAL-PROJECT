@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* =========================
+       BACKGROUND
+    ========================= */
+
+    --bg-deep: #070812;
+    --bg-primary: #080A16;
+    --bg-secondary: #101326;
+    --bg-tertiary: #151932;
+
+    /* =========================
+       PURPLE
+    ========================= */
+
+    --purple-dark: #4C1D95;
+    --purple: #6D28D9;
+    --purple-primary: #7C3AED;
+    --purple-bright: #8B5CF6;
+    --purple-soft: #A78BFA;
+    --purple-light: #C4B5FD;
+
+    /* =========================
+       BLUE
+    ========================= */
+
+    --blue-dark: #1D4ED8;
+    --blue: #2563EB;
+    --blue-primary: #3B82F6;
+    --blue-bright: #60A5FA;
+    --blue-soft: #93C5FD;
+
+    /* =========================
+       CYAN
+    ========================= */
+
+    --cyan: #06B6D4;
+    --cyan-bright: #22D3EE;
+
+    /* =========================
+       GLASS
+    ========================= */
+
+    --glass: rgba(255, 255, 255, 0.06);
+    --glass-light: rgba(255, 255, 255, 0.08);
+    --glass-strong: rgba(255, 255, 255, 0.11);
+
+    --glass-border: rgba(255, 255, 255, 0.10);
+    --glass-border-hover: rgba(255, 255, 255, 0.18);
+
+    --glass-1: rgba(255, 255, 255, 0.04);
+    --glass-2: rgba(255, 255, 255, 0.06);
+    --glass-3: rgba(255, 255, 255, 0.08);
+    --glass-strong: rgba(255, 255, 255, 0.11);
+
+    --glass-border: rgba(255, 255, 255, 0.10);
+    --glass-border-hover: rgba(255, 255, 255, 0.18);
+
+    --glass-highlight: rgba(255, 255, 255, 0.08);
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --text-disabled: #64748B;
+
+    /* =========================
+       STATUS
+    ========================= */
+
+    --success: #10B981;
+    --success-bright: #34D399;
+
+    --warning: #F59E0B;
+    --warning-bright: #FBBF24;
+
+    --danger: #EF4444;
+    --danger-bright: #F87171;
+
+    /* =========================
+       GRADIENTS
+    ========================= */
+
+    --gradient-primary:
+        linear-gradient(135deg, #7C3AED, #3B82F6);
+
+    --gradient-purple-cyan:
+        linear-gradient(135deg, #8B5CF6, #22D3EE);
+
+    --gradient-blue-cyan:
+        linear-gradient(135deg, #2563EB, #06B6D4);
+
+    --gradient-purple-pink:
+        linear-gradient(135deg, #7C3AED, #D946EF);
+
+    --gradient-hero:
+        linear-gradient(135deg, #7C3AED, #C026D3, #2563EB);
+
+    /* =========================
+       SHADOWS
+    ========================= */
+
+    --glow-purple:
+        0 0 35px rgba(124, 58, 237, 0.25);
+
+    --glow-blue:
+        0 0 35px rgba(59, 130, 246, 0.25);
+
+    --glow-cyan:
+        0 0 35px rgba(34, 211, 238, 0.20);
+
+    --shadow-card:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+body {
+    background-color: var(--bg-deep);
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.mainBox {
+    position: relative;
+    overflow: hidden;
+    min-height: 100dvh;
+    width: 100%;
+    background: var(--bg-deep);
+}
+
+.bgGlow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(120px);
+    will-change: transform, opacity;
+    animation-timing-function: ease-in-out;
+}
+
+.purpleGlow {
+    top: -200px;
+    left: -200px;
+}
+
+.blueGlow {
+    top: -200px;
+    right: -200px;
+}
+
+.cyanGlow {
+    bottom: -250px;
+    right: 20%;
+}

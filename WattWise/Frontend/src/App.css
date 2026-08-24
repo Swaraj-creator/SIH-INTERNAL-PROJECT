@@ -1,0 +1,51 @@
+/* Professional lighting animations and effects */
+
+/* Main glow container styling */
+.mainBox .bgGlow {
+  transition: filter 0.3s ease;
+}
+
+/* Enhanced purple light source */
+.purpleGlow {
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(147, 112, 219, 0.45),
+    rgba(124, 58, 237, 0.28),
+    rgba(124, 58, 237, 0.08)
+  );
+  box-shadow:
+    0 0 80px rgba(124, 58, 237, 0.4),
+    0 0 120px rgba(147, 112, 219, 0.25),
+    0 0 160px rgba(124, 58, 237, 0.15),
+    inset 0 0 80px rgba(168, 85, 247, 0.2);
+}
+
+/* Enhanced blue light source */
+.blueGlow {
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(96, 165, 250, 0.42),
+    rgba(59, 130, 246, 0.26),
+    rgba(59, 130, 246, 0.06)
+  );
+  box-shadow:
+    0 0 80px rgba(59, 130, 246, 0.38),
+    0 0 120px rgba(96, 165, 250, 0.22),
+    0 0 160px rgba(59, 130, 246, 0.12),
+    inset 0 0 80px rgba(147, 197, 253, 0.18);
+}
+
+/* Enhanced cyan light source */
+.cyanGlow {
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(34, 211, 238, 0.38),
+    rgba(6, 182, 212, 0.2),
+    rgba(34, 211, 238, 0.04)
+  );
+  box-shadow:
+    0 0 70px rgba(34, 211, 238, 0.35),
+    0 0 110px rgba(22, 203, 228, 0.18),
+    0 0 150px rgba(34, 211, 238, 0.08),
+    inset 0 0 70px rgba(34, 211, 238, 0.15);
+}

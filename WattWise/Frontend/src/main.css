@@ -129,11 +129,20 @@ body {
 }
 
 .bgBox {
-    position: relative;
+    position: fixed;
     overflow: hidden;
     min-height: 100dvh;
     width: 100%;
     background: var(--bg-deep);
+}
+.mainBox {
+    position: relative;
+    z-index: 10;
+    min-height: 100dvh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: transparent;
 }
 
 .bgGlow {

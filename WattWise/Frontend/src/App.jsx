@@ -18,6 +18,7 @@ function App() {
         filter: 'blur(150px)',
         x: -100,
         y: -100,
+        delay: 1,
         duration: 2.2,
         ease: 'power4.out'
       }, 0)
@@ -27,6 +28,7 @@ function App() {
         opacity: 0,
         scale: 0.3,
         filter: 'blur(150px)',
+        delay: 2,
         x: 100,
         y: -100,
         duration: 2,
@@ -38,6 +40,7 @@ function App() {
         opacity: 0,
         scale: 0.3,
         filter: 'blur(150px)',
+        delay: 2,
         y: 100,
         duration: 2.3,
         ease: 'power4.out'

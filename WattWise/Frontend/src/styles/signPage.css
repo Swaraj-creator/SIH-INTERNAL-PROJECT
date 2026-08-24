@@ -1,0 +1,37 @@
+.mainSignBox {
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.descriptionBox {
+    width: calc(50% - 100px);
+    height: calc(100% - 100px);
+    /* background: var(--glass); */
+    position: relative;
+}
+.signBox {
+    width: calc(50% - 100px);
+    height: calc(100% - 100px);
+    /* background: var(--glass); */
+    position: relative;
+    /* border-left: 1px solid var(--glass-border); */
+}
+.logo {
+    width: calc(50% - 10px);
+    height: auto;
+    position: relative;
+    left: 20px;
+    filter: drop-shadow(var(--shadow-card));
+    user-select: none;
+    pointer-events: none;
+    img {
+        width: auto;
+        height: 200px;
+    }
+}

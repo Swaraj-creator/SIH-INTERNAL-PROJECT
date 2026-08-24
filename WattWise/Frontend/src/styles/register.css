@@ -1,0 +1,15 @@
+.registerForm {
+    width: calc(100% - 150px);
+    max-height: calc(100% - 50px);
+    height: auto;
+    min-height: 300px;
+    background: var(--glass);
+    position: relative;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(30px);
+    z-index: 1;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const navigation = () => {
+const Mavigation = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const navigation = () => {
   )
 }
 
-export default navigation
+export default Navigation

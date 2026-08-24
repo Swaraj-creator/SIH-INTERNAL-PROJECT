@@ -128,7 +128,7 @@ body {
     width: 100%;
 }
 
-.mainBox {
+.bgBox {
     position: relative;
     overflow: hidden;
     min-height: 100dvh;

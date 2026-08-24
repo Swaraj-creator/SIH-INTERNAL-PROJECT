@@ -1,13 +1,19 @@
-import React from 'react'
-import register from './auth/register'
-import login from './auth/login'
+import React, { useState } from 'react'
+import Register from './auth/register'
+import Login from './auth/login'
 
-const signUser = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+const SignUser = () => {
+    const [registered, setRegister] = useState(false);
+    return (
+        <div className="mainSignBox">
+            <div className="descriptionBox">
+
+            </div>
+            <div className="signBox">
+                {registered ? (<Login></Login>) : (<Register></Register>)}
+            </div>
+        </div>
+    )
 }
 
-export default signUser
+export default SignUser

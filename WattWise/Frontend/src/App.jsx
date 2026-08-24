@@ -1,9 +1,10 @@
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import './App.css'
+import Body from './components/body'
 
 function App() {
-  const mainBoxRef = useRef(null)
+  const bgBoxRef = useRef(null)
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -98,19 +99,25 @@ function App() {
         delay: 2.9
       })
 
-    }, mainBoxRef)
+    }, bgBoxRef)
 
     return () => ctx.revert()
   }, [])
 
   return (
-    <div ref={mainBoxRef} className="mainBox">
+    <>
+      <div ref={bgBoxRef} className="bgBox">
 
-      <div className="bgGlow purpleGlow"></div>
-      <div className="bgGlow blueGlow"></div>
-      <div className="bgGlow cyanGlow"></div>
+        <div className="bgGlow purpleGlow"></div>
+        <div className="bgGlow blueGlow"></div>
+        <div className="bgGlow cyanGlow"></div>
 
-    </div>
+      </div>
+
+      <div className="mainBox">
+        <Body></Body>
+      </div>
+    </>
   )
 }
 
